@@ -402,7 +402,16 @@
 
   const appId = typeof __app_id !== 'undefined' ? __app_id : 'poker-multiplayer';
 
-  let firebaseConfig = { projectId: "demo-project", apiKey: "demo-key" };
+  // Configuración real de Firebase del usuario
+  let firebaseConfig = {
+    apiKey: "AIzaSyBmbAB5sS72m797VZ0gujhOe-EyAvqAwZI",
+    authDomain: "poker-518d7.firebaseapp.com",
+    projectId: "poker-518d7",
+    storageBucket: "poker-518d7.firebasestorage.app",
+    messagingSenderId: "624835542633",
+    appId: "1:624835542633:web:adfd5f9c5cc70ce84cecf8"
+  };
+
   try {
     if (typeof __firebase_config !== 'undefined') {
       firebaseConfig = JSON.parse(__firebase_config);
